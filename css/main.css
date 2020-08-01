@@ -395,6 +395,7 @@ input.input100 {
   height: 50px;
   background-color: #57b846;
   border-radius: 25px;
+  box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
 
   font-family: Poppins-Regular;
   font-size: 16px;
@@ -409,6 +410,7 @@ input.input100 {
 
 .login100-form-btn:hover {
   background-color: #333333;
+  transform: translate(0, -10px)
 }
 
 
