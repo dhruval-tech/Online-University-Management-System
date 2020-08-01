@@ -154,6 +154,7 @@ button:hover {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .container-login100 {
