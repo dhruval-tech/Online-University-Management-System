@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Login</title>
 </head>
 <body>
-    <center><h1>Login</h1></center>
+    <!-- <center><h1>Login</h1></center>
     <form action="home.html" method="GET">
         <center><table>
             <tr>
@@ -18,7 +26,7 @@
                 <td><input type="password" name="passwd"></td>
             </tr>
             
-            <!-- <tr>
+            <tr>
                 <td>User Type</td>
                 <td>
                     <select name="" id="" >
@@ -46,7 +54,7 @@
                         New user?
                     </button></a>
                 </td>
-            </tr> -->
+            </tr> 
         </table>
     </center>
     </form><br></br>
@@ -69,7 +77,69 @@
     
     </center>
     <h4>This 2 submit buttons are temporary, once it connect with backend, this will be removed</h4>
-   
+    -->
+
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
+
+				<form class="login100-form validate-form" action="home.html" method="GET ">
+					<div class="wrap-input100 validate-input " style="margin-bottom: 26px;" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Enter username" required>
+						<span class="focus-input100"></span>
+					</div><br><br>
+
+					<div class="wrap-input100 validate-input" style="margin-bottom: 18px;" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Enter password" required>
+						<span class="focus-input100"></span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" style="margin-bottom: 18px;" data-validate = "Password is required">
+						<span class="label-input100">User Type</span>
+                        <!-- <input class="input100" type="password" name="pass" placeholder="Enter password" required> -->
+                        <select name="" id="" class="input100" style="margin-top: 15px;"> 
+                            <option value="admin">Admin</option>
+                            <option value="student">Student</option>
+                        </select>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="flex-sb-m w-full" style="padding-bottom: 30px;">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+                        
+						
+                    </div>
+                    <div>
+                        <a href="#" class="txt1">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="js/main.js"></script>
+
 
 </body>
 </html>
