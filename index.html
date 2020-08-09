@@ -88,25 +88,25 @@
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" action="home.html" method="GET ">
+				<form class="login100-form validate-form"  method="GET " id="login_form">
 					<div class="wrap-input100 validate-input " style="margin-bottom: 26px;" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username" required>
+						<span class="label-input100" >Username</span>
+						<input class="input100" id="uname" type="text" name="username" placeholder="Enter username" required>
 						<span class="focus-input100"></span>
 					</div><br><br>
 
 					<div class="wrap-input100 validate-input" style="margin-bottom: 18px;" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password" required>
+						<span class="label-input100" >Password</span>
+						<input class="input100" id="passwd" type="password" name="pass" placeholder="Enter password" required>
 						<span class="focus-input100"></span>
                     </div>
                     
                     <div class="wrap-input100 validate-input" style="margin-bottom: 18px;" data-validate = "Password is required">
 						<span class="label-input100">User Type</span>
                         <!-- <input class="input100" type="password" name="pass" placeholder="Enter password" required> -->
-                        <select name="" id="" class="input100" style="margin-top: 15px;"> 
-                            <option value="admin">Admin</option>
-                            <option value="student">Student</option>
+                        <select name="" id="role" class="input100" style="margin-top: 15px;"> 
+                            <option value="1">Student</option>
+                            <option value="2">Admin</option>
                         </select>
 						<span class="focus-input100"></span>
 					</div>
@@ -128,7 +128,7 @@
                     </div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" onclick="login()">
 							Login
 						</button>
 					</div>

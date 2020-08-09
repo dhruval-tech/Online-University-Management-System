@@ -3,37 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Admin</title>
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 <body>
-    <center><h1>Admin Dashboard</h1></center>
-    <center>
-        <a href="addPlacement.html"><button> 
-         addPlacement
-         </button></a>
-     </center><br><br>
-    <center>
-        <a href="addMeeting.html"><button> 
-         addMeeting
-         </button></a>
-     </center>
-     <br><br>
-     <center>
-        <a href="addMaterials.html"><button> 
-         addMaterials
-         </button></a>
-     </center><br><br>
-     
-     <center>
-        <a href="addPastPapers.html"><button> 
-         addPastPapers
-         </button></a>
-     </center><br><br>
-     <center>
-        <a href="index.html"><button> 
-         Logout
-         </button></a>
-     </center>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark">
+          <a class="navbar-brand" href="#"><strong>D</strong></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav ml-auto"  >
+              <li class="nav-item active">
+                <a class="nav-link" href="adminHome.html" style="float: right;"><font color="white">Home</font> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="placement.html"><font color="white">Placement</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html"><font color="white">My Profile</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><font color="white">Logout</font></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <br>
+      </header>
+      <main class="text-center py-5">
+        <div class="container">
+            <center><h1>Admin Dashboard</h1></center>
+            <center>
+                <a href="addPlacement.html"><button> 
+                 addPlacement
+                 </button></a>
+             </center><br><br>
+            <center>
+                <a href="addMeeting.html"><button> 
+                 addMeeting
+                 </button></a>
+             </center>
+             <br><br>
+             <center>
+                <a href="addMaterials.html"><button> 
+                 addMaterials
+                 </button></a>
+             </center><br><br>
+             
+             <center>
+                <a href="addPastPapers.html"><button> 
+                 addPastPapers
+                 </button></a>
+             </center><br><br>
+             
+        </div>
+      </main>
+      <!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small><font color="white">Copyright &copy; Dhruval Gandhi</font></small>
+        </div>
+      </footer> -->
     
 </body>
 </html>

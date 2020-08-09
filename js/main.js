@@ -65,4 +65,26 @@
     }
     
 
-})(jQuery);
+})
+
+// Login page
+function login(){
+
+    //console.log("a");
+
+    var uname=document.getElementById("uname").value;
+    var pwd=document.getElementById("passwd").value;
+    var role=document.getElementById("role").value;
+    if(uname!=null && pwd!=null){
+        if(role==1)
+            document.getElementById("login_form").action = "home.html";
+        else    
+             document.getElementById("login_form").action = "adminHome.html";
+
+
+    }else{
+        alert("Enter all the fields");
+    }    
+}
+
+// Home page

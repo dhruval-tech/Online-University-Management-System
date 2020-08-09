@@ -4,30 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Placement</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 <body>
-    <center><h1>Add Placement</h1></center>
-    <form action="adminHome.html" method="GET">
-        <center><table>
-            <tr>
-                <td>Company Name</td>
-                <td><input type="text" name="name"></td>
-            </tr><br><br>
-            <tr>
-                <td>Total Placements:</td>
-                <td><input type="number" name="" id=""></td>
-            </tr>
+    <header>
 
-            <tr>
-                <td>Max Package:</td>
-                <td><input type="number" name="" id=""></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Update"></td>
-            </tr>
-        </table>
-    </center>
-    </form><br></br>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark">
+          <a class="navbar-brand" href="#"><strong>D</strong></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav ml-auto"  >
+              <li class="nav-item active">
+                <a class="nav-link" href="adminHome.html" style="float: right;"><font color="white">Home</font> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="placement.html"><font color="white">Placement</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html"><font color="white">My Profile</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><font color="white">Logout</font></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <br>
+      </header>
+      <main class="text-center py-5">
+        <div class="container">
+          <center><h1>Add Placement</h1></center>
+          <!-- <form action="adminHome.html" method="GET">
+              <center><table>
+                  <tr>
+                      <td>Company Name</td>
+                      <td><input type="text" name="name"></td>
+                  </tr><br><br>
+                  <tr>
+                      <td>Total Placements:</td>
+                      <td><input type="number" name="" id=""></td>
+                  </tr>
+      
+                  <tr>
+                      <td>Max Package:</td>
+                      <td><input type="number" name="" id=""></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><input type="submit" value="Update"></td>
+                  </tr>
+              </table>
+          </center>
+          </form><br></br> -->
+          <!-- <form class="text-center" style="color: #757575;" > -->
+
+            <!-- Email -->
+            <div class="md-form">
+              <input type="text" id="cname" class="form-control" placeholder="Company Name"><br>
+              <!-- <label for="materialLoginFormEmail">E-mail</label> -->
+            </div>
+      
+            <!-- Password -->
+            <div class="md-form">
+              <input type="number" id="total_place" class="form-control" placeholder="Total Placements"><br>
+              <!-- <label for="materialLoginFormPassword">Password</label> -->
+            </div>
+            <div class="md-form">
+              <input type="number" id="pkg" class="form-control" placeholder="Highest Package"><br>
+              <!-- <label for="materialLoginFormPassword">Password</label> -->
+            </div>
+            
+            
+            <!-- Sign in button -->
+            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" onclick="print()">Update</button>
+            <!-- <button class="btn btn-primary" onclick="print()">Update</button> -->
+           
+          <!-- </form> -->
+          <br><br>
+          <form class="text-center" style="color: #757575;" >
+
+            <table border="2">
+              <tr>
+                <td id="t1"></td>
+                <td id="t1Val"></td>
+              </tr>
+              <tr>
+                <td id="t2"></td>
+                <td id="t2Val"></td>
+              </tr>
+              <tr>
+                <td id="t3"></td>
+                <td id="t3Val"></td>
+              </tr>
+            </table>  
+         </form>
+        </div>
+      </main>
+      <!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small><font color="white">Copyright &copy; Dhruval Gandhi</font></small>
+        </div>
+      </footer> -->
+      <script src="js/admin.js"></script>
+
 </body>
 </html>
