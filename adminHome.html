@@ -5,7 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"  crossorigin="anonymous"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    
+    <style>
+        ::-webkit-scrollbar{
+             display: none;
+        }
+        .pagination li{
+          overflow: auto;
+        }
+        .pagination li a{
+          position: relative;
+          float: left;
+          padding: 6px 12px;
+          margin-left: -1px;
+          line-height: 1.42857143;
+          color: #428bca;
+          text-decoration: none;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          overflow: auto;
+          
+        }
+        .pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+        div.scrollmenu {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+          background-color: #777;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,7 +63,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav ml-auto"  >
               <li class="nav-item active">
-                <a class="nav-link" href="adminHome.html" style="float: right;"><font color="white">Home</font> <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="adminHome.html" style="float: right; "><font color="white">Home</font> <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="placement.html"><font color="white">Placement</font></a>
@@ -35,9 +77,9 @@
             </ul>
           </div>
         </nav>
-        <br>
-      </header>
-      <main class="text-center py-5">
+        
+      </header><br>
+      <!-- <main class="text-center py-5">
         <div class="container">
             <center><h1>Admin Dashboard</h1></center>
             <center>
@@ -64,12 +106,52 @@
              </center><br><br>
              
         </div>
+      </main> -->
+      <main class="text-center py-5" >
+      
+        <div class="container">
+          <div class="row" style="background-color: #6380AC;"> 
+            <ul class="pagination overflow-auto" style="    margin-left: 250px;color:black;">
+              <li class="disabled"><a href="#">«</a></li>
+              <li class="active"><a href="#" style="color:black;">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">Add past papers</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li>
+            </ul>
+          </div>
+          
+          <div class="row">
+            <form action="">
+              <table>
+                <tr>
+                  <td>student id</td>
+                  <td><input type="text" name="" id=""></td>
+                </tr>
+              </table>
+            </form>
+
+          </div>
+          
+      
       </main>
+
       <!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
           <small><font color="white">Copyright &copy; Dhruval Gandhi</font></small>
         </div>
       </footer> -->
+      <script src="js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     
 </body>
 </html>
