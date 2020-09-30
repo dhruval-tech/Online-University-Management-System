@@ -77,7 +77,7 @@ function login(){
     var role=document.getElementById("role").value;
     if(uname!=null && pwd!=null){
         if(role==1)
-            document.getElementById("login_form").action = "home.html";
+            document.getElementById("login_form").action = "home1.html";
         else    
              document.getElementById("login_form").action = "adminHome.html";
 
